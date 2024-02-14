@@ -1,0 +1,18 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.nav-link{
+
+  cursor: pointer;
+}
+
+.navbar-expand-lg .navbar-collapse{
+  justify-content: end;
+}
+
+ul {  list-style-type: none;}

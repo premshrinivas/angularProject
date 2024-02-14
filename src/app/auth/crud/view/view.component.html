@@ -1,0 +1,115 @@
+
+<div class="bg-img"></div>
+<app-header></app-header>
+
+<form class="form-card" [formGroup]="viewform">
+  <div class="m-4">
+    <div class="row gx-3 gy-2 align-items-center">
+       
+      <div class="col-sm-4">
+        <label class="visually" for="specificSizeInputName">Name</label>
+        <input type="text" class="form-control" formControlName="name"  placeholder="name" readonly>
+      </div>
+      
+      <div class="col-sm-4">
+        <label class="visually" for="specificSizeInputName">Phone</label>
+        <input type="text" class="form-control" formControlName="phone" maxlength="10" placeholder="phone" maxlength="10" readonly>
+      </div>
+      <div class="col-sm-4">
+        <label class="visually" for="specificSizeInputName">Email</label>
+        <input type="text" class="form-control" formControlName="email"  placeholder="email*" readonly>
+       
+      </div>
+      
+   
+      
+      
+      <div class="col-sm-4">
+        <label class="visually" for="specificSizeInputName">Number of peoples</label>
+        <input type="number" class="form-control" formControlName="noperson"  placeholder="Number of peoples" readonly >
+      </div>
+      <div class="col-sm-4">
+        <label class="visually" for="specificSizeInputName">Trip start at</label>
+        <input type="text" class="form-control" formControlName="trips"  placeholder="Trip start at" readonly>
+    </div>
+      <div class="col-sm-4">
+        <label class="visually" for="specificSizeSelect">Type of Tour</label>
+        <select class="form-select" id="address" formControlName="toplace">
+          <option selected disabled>Type of tour</option>
+          <option value="Wildlife"disabled>Wildlife</option>
+          <option value="Trekking"disabled>Trekking</option>
+          <option value="Heritage"disabled>Heritage</option>
+           <option value="Pilgrimage"disabled>Pilgrimage</option>
+            <option value="Mountains"disabled>Mountains</option>
+             <option value="Beach tour"disabled>Beach tour</option>
+             
+        </select>
+      </div>
+    
+      
+      <div class="col-sm-4">
+        <label class="visually" for="specificSizeSelect">Type of Transport</label>
+        <select class="form-select"  formControlName="tovehicle">
+          <option selected disabled>Type of Transport</option>
+          <option value="Bus" disabled>Bus</option>
+          <option value="Train" disabled>Train</option>
+          <option value="Flight" disabled>Flight</option>
+        </select>
+      </div>
+      <div class="col-sm-4">
+        <label class="visually" for="specificSizeSelect">Place of Visit</label>
+        <select class="form-select" formControlName="povisit">
+          <option selected disabled>Place of visit</option>
+          <option value="Delhi" disabled>Delhi</option>
+          <option value="Himalaya" disabled>Himalaya</option>
+          <option value="Kerla"disabled>Kerla</option>
+           <option value="Ooty"disabled>Ooty</option>
+            <option value="Kodaikanal"disabled>Kodaikanal</option>
+             <option value="Kailash"disabled>Kailash</option>
+              <option value="Yercaud"disabled>Yercaud</option>
+        </select>
+      </div>
+      
+      <div class="col-sm-4">
+        <label class="visually" for="specificSizeSelect">Package</label>
+        <select class="form-select"  formControlName="packagee">
+          <option selected disabled>select package per person</option>
+          <option value="3000"disabled>3000</option>
+          <option value="5000"disabled>5000</option>
+          <option value="8000" disabled>8000</option>
+           <option value="10000"disabled>10000</option>
+            </select>
+      </div>
+      <div class="col-sm-3">
+        <label for="start">Start date:</label>
+    
+        <input type="text"  class="form-control addpartner-input" formControlName="start"
+        autocomplete="off" [bsConfig]="{showWeekNumbers:false,dateInputFormat:'DD-MM-YYYY'}" bsDatepicker 
+        (ngModelChange)="getDateInRequiredFormat(this.viewform.value.start)" placeholder="Date*" readonly
+        >
+
+        
+      </div>
+       <div class="col-sm-3">
+        <label for="start">End date:</label>
+ 
+           <input type="text"  class="form-control addpartner-input" formControlName="end"
+           autocomplete="off" [bsConfig]="{showWeekNumbers:false,dateInputFormat:'DD-MM-YYYY'}" bsDatepicker 
+           (ngModelChange)="getDateInRequiredFormat(this.viewform.value.end)" placeholder="end*" readonly
+          >
+         
+      </div>
+     
+      <div class="row" style="padding-top: 10px;">
+        <div class="col-lg-12 text-center">
+            <button  class="btn btn-dark" routerLink="/grid">back</button>
+            
+          </div>
+    </div>
+       
+    </div>
+    </div>
+    
+</form> 
+    
+

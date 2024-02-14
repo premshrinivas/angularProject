@@ -1,0 +1,150 @@
+
+<div class="bg-img">
+<app-header></app-header>
+
+<form class="form-card" [formGroup]="savea" (ngSubmit)="onSave()">
+<div class="m-4">
+    <div class="row gx-3 gy-2 align-items-center">
+       
+      <div class="col-sm-4">
+        <label class="visually" for="specificSizeInputName">Name</label>
+        <input type="text" class="form-control" formControlName="name"  placeholder="name*" [class.is-invalid]="submitted && name.errors">
+        <div *ngIf="submitted && name.errors" class="invalid-feedback">
+          <div *ngIf="name.errors?.['required']">Name is required</div>
+      </div>
+      </div>
+      
+      <div class="col-sm-4">
+        <label class="visually" for="specificSizeInputName">Phone</label>
+        <input type="text" class="form-control" formControlName="phone" maxlength="10" placeholder="phone*" maxlength="10"[class.is-invalid]="submitted && phone.errors">
+        <div *ngIf="submitted&& phone.errors" class="invalid-feedback">
+          <div *ngIf="phone.errors?.['required']">Phone is required</div>
+      </div>
+      </div>
+      <div class="col-sm-4">
+        <label class="visually" for="specificSizeInputName">Email</label>
+        <input type="text" class="form-control" formControlName="email"  placeholder="email*" [class.is-invalid]="submitted && email.errors">
+        <div *ngIf="submitted && email.errors" class="invalid-feedback">
+          <div *ngIf="email.errors?.['required']">Email is required</div>
+      </div>
+      </div>
+      
+   
+      
+      
+      <div class="col-sm-4">
+        <label class="visually" for="specificSizeInputName">Number of peoples</label>
+        <input type="number" class="form-control" formControlName="noperson"  placeholder="Number of peoples*"[class.is-invalid]="submitted && noperson.errors" >
+        <div *ngIf="submitted&& noperson.errors" class="invalid-feedback">
+          <div *ngIf="noperson.errors?.['required']">Number of peoples is required</div>
+      </div>
+      </div>
+      <div class="col-sm-4">
+        <label class="visually" for="specificSizeInputName">Trip start at</label>
+        <input type="text" class="form-control" formControlName="trips"  placeholder="*" [class.is-invalid]="submitted && trips.errors">
+        <div *ngIf="submitted && trips.errors" class="invalid-feedback">
+          <div *ngIf="trips.errors?.['required']">Trip starting is required</div>
+      </div>
+      </div>
+    
+     
+      <div class="col-sm-4">
+        <label class="visually" for="specificSizeSelect">Type of Tour</label>
+        <select class="form-select" id="address" formControlName="toplace"[class.is-invalid]="submitted && toplace.errors">
+          <div *ngIf="submitted&& toplace.errors" class="invalid-feedback">
+            <div *ngIf="toplace.errors?.['required']">Type of Tour is required</div>
+        </div>
+          <option selected>Type of tour</option>
+          <option value="Wildlife">Wildlife</option>
+          <option value="Trekking">Trekking</option>
+          <option value="Heritage">Heritage</option>
+           <option value="Pilgrimage">Pilgrimage</option>
+            <option value="Mountains">Mountains</option>
+             <option value="Beach tour">Beach tour</option>
+             
+        </select>
+      </div>
+    
+      
+      <div class="col-sm-4">
+        <label class="visually" for="specificSizeSelect">Type of Transport</label>
+        
+      <select class="form-select"  formControlName="tovehicle"[class.is-invalid]="submitted && tovehicle.errors">
+        <div *ngIf="submitted&& tovehicle.errors" class="invalid-feedback">
+          <div *ngIf="tovehicle.errors?.['required']">Type of Transport is required</div>
+      </div>
+        <option selected>Type of Transport</option>
+          <option value="Bus">Bus</option>
+          <option value="Train">Train</option>
+          <option value="Flight">Flight</option>
+        </select>
+      </div>
+      <div class="col-sm-4">
+        <label class="visually" for="specificSizeSelect">Place of visit</label>
+        <select class="form-select" formControlName="povisit"[class.is-invalid]="submitted && povisit.errors">
+          <div *ngIf="submitted&& povisit.errors" class="invalid-feedback">
+            <div *ngIf="povisit.errors?.['required']">Place of visit is required</div>
+        </div>
+          <option selected>Place of visit</option>
+          <option value="Delhi">Delhi</option>
+          <option value="Himalaya">Himalaya</option>
+          <option value="Kerla">Kerla</option>
+           <option value="Ooty">Ooty</option>
+            <option value="Kodaikanal">Kodaikanal</option>
+             <option value="Kailash">Kailash</option>
+              <option value="Yercaud">Yercaud</option>
+        </select>
+      </div>
+    
+      <div class="col-sm-4">
+        <label class="visually" for="specificSizeSelect">Package</label>
+        <select class="form-select"  formControlName="packagee"[class.is-invalid]="submitted && packagee.errors">
+          <div *ngIf="submitted&& packagee.errors" class="invalid-feedback">
+            <div *ngIf="packagee.errors?.['required']">Packagae is required</div>
+        </div>
+          <option selected>select package per person</option>
+          <option value="3000">3000</option>
+          <option value="5000">5000</option>
+          <option value="8000">8000</option>
+           <option value="10000">10000</option>
+            </select>
+      </div>
+      <div class="col-sm-3">
+        <label for="start">Start date:</label>
+    
+    <!-- <input type="date"  formControlName="start"
+           value="2022-06-21"
+           min="2022-06-15" max="2022-10-25"> -->
+           <input type="text"  class="form-control addpartner-input" formControlName="start"
+           autocomplete="off" [bsConfig]="{showWeekNumbers:false,dateInputFormat:'DD-MM-YYYY'}" bsDatepicker 
+           (ngModelChange)="getDateInRequiredFormat(this.savea.value.start,'startDate')" placeholder="Date*" readonly
+           [class.is-invalid]="submitted && start.errors">
+        
+      </div>
+       <div class="col-sm-3">
+        <label for="start">End date:</label>
+    
+    <!-- <input type="date" formControlName="end"
+           value="2022-06-21"> -->
+           <input type="text"  class="form-control addpartner-input" formControlName="end"
+           autocomplete="off" [bsConfig]="{showWeekNumbers:false,dateInputFormat:'DD-MM-YYYY'}" bsDatepicker 
+           (ngModelChange)="getDateInRequiredFormat(this.savea.value.end,'endDate')" placeholder="end*" readonly
+           [class.is-invalid]="submitted && end.errors">
+         
+      </div>
+     
+     
+      <div class="row" style="padding-top: 10px;">
+        <div class="col-lg-12 text-center" >
+          <button type="submit" class="btn btn-primary">Submit</button>
+         
+         <button type="button"  class="btn btn-dark" style="margin-left: 5px;" routerLink="/grid">Back</button>
+          
+        </div>
+      </div>
+       
+    </div>
+    </div>
+    
+</form> 
+</div>    

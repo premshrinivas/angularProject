@@ -1,0 +1,197 @@
+/* Importing fonts from Google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Reseting */
+.bg-img{
+
+    background-image: url("https://wtravels.in/images/Indiabanner.png");
+    
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    }
+    .bg{
+        background-image: url();
+    }
+   
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.background{
+    background-color: #010802(235, 235, 235);
+    min-height: 90vh;
+  
+}
+
+
+
+.img1{
+background-image: url()no-repeat 95%;
+
+}
+
+
+
+.container {
+    margin: 120px;
+}
+
+.container .content {
+    max-width: 42%;
+    margin-right: 30px;
+}
+
+.container .fs-5 {
+    font-size: 1.4rem !important;
+    font-weight: 200;
+}
+
+.container .text-grey {
+    color: #dd1c1c;
+}
+
+.container .text {
+    font-weight: 100;
+    font-size: 0.9rem;
+    line-height: 1.6rem;
+}
+
+.container .btn {
+    border: none;
+    box-shadow: 0 2px 3px #505050b0;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 1.3px;
+}
+
+.container .content .btn.btn-primary {
+    color: #f2f2f2;
+    background-color: #14ca72;
+}
+
+.container .content .btn.btn-primary:hover {
+    background-color: #21a063;
+}
+
+.container .btn.btn-default {
+    background-color: #fff;
+}
+
+.container .btn.btn-default:hover {
+    background-color: #f2f2f2;
+}
+
+.container .btn img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+.card{
+
+    background-color: #ffffff87;
+}
+
+
+
+
+
+
+.container .card {
+    margin-left: 40px;
+    margin-right: 190px;
+    margin-bottom: 80;
+    min-width: 320px;
+    max-width: 400px;
+    height: 350px;
+    border: none;
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px #000000;
+}
+
+.container .card .card-head {
+    padding: 25px 20px;
+    overflow-x: hidden;
+   
+    height: 140px;
+}
+
+.container .card .card-form {
+    height: 100%;
+    padding: 75px 20px;
+    background-image: url();
+}
+
+.container .card .card-form .input-field {
+    background-color: #fff;
+    border-bottom: 1px solid rgb(235, 6, 6);
+    margin-bottom: 20px;
+    padding: 0.1rem 0.3rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 3px #1f1f1f33;
+}
+
+.container .card .card-form .input-field .form-control {
+    box-shadow: #02f12a;
+    border: none;
+}
+
+.container .card .card-form .input-field input:focus::placeholder {
+    color: rgb(185, 43, 43);
+}
+
+.container .card .fs-08 {
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.container .card .card-form .btn {
+    width: 100px;
+}
+
+.container .card .card-form .btn.btn.btn-primary {
+    background-color: #e60a53;
+}
+
+.container .card .card-form .btn.btn.btn-primary:hover {
+    background-color: hsl(187, 100%, 56%);
+}
+
+@media (max-width: 767.5px) {
+    .container .content {
+        max-width: 100%;
+        margin-bottom: 30px;
+        padding: 15px;
+        margin-right: 0px;
+    }
+
+    .container .card {
+        margin-left: 0;
+    }
+
+  
+}
+
+@media (max-width: 350px) {
+    .container .content .btn {
+        font-size: 0.8rem;
+    }
+
+    .container .card {
+        min-width: 300px;
+    }
+}

@@ -1,0 +1,25 @@
+[{
+  "id": "firstName",
+  "label": "first name",
+  "type": "text",
+  "value": ""
+},
+{
+  "id": "Email",
+  "label": "Email name",
+  "type": "select",
+  "value": ""
+},
+{
+  "id": "Dop",
+  "label": "Dop",
+  "type": "radio",
+  "value": ""
+},
+{
+  "id": "Mobile",
+  "label": "Mobile",
+  "type": "date",
+  "value": ""
+}
+]

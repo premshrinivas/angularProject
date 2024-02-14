@@ -1,0 +1,66 @@
+@keyframes blink{
+    0% {
+        background-image: url(https://i.pinimg.com/736x/0c/e4/bd/0ce4bdc8c57ba5454a8d96772a2eb031.jpg);
+    }
+    20% {
+        background-image: url(https://images.unsplash.com/photo-1598324789736-4861f89564a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8dGFqJTIwbWFoYWwlMjBhZ3JhJTIwaW5kaWF8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
+            image: no-repeat;
+    }
+    30% {
+        background-image: url(https://images.unsplash.com/photo-1502085671122-2d218cd434e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=926&q=80);
+    }
+    40% {
+        background-image: url(https://inst.eecs.berkeley.edu/~cs194-26/fa18/upload/files/projFinalAssigned/cs194-26-abr/images/seamcarving/tower.jpg);
+    }
+    50% {
+        background-image: url(https://media.istockphoto.com/photos/couple-pushing-trolley-with-their-child-at-airport-picture-id1325212877?b=1&k=20&m=1325212877&s=170667a&w=0&h=lEey74nmiKVFn2Nc0vVUNUhKysbTbiJnyMn3uv013uM=);
+    }
+    60% {
+        background-image: url(https://images.unsplash.com/photo-1533587851505-d119e13fa0d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60);
+    }
+    70% {
+        background-image: url(https://images.unsplash.com/photo-1524467128837-00f6644866d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTN8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+    }
+    80% {
+        background-image: url(https://images.unsplash.com/photo-1609137144813-7d9921338f24?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8OHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60);
+    }
+    90% {
+        background-image: url(https://images.unsplash.com/photo-1576487248805-cf45f6bcc67f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTh8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+    }
+}
+@-webkit-keyframes blink{
+    0% {
+        background-image: url(https://i.pinimg.com/736x/0c/e4/bd/0ce4bdc8c57ba5454a8d96772a2eb031.jpg);
+    }
+    20% {
+        background-image: url(https://images.unsplash.com/photo-1598324789736-4861f89564a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8dGFqJTIwbWFoYWwlMjBhZ3JhJTIwaW5kaWF8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
+    }
+    30% {
+        background-image: url(https://images.unsplash.com/photo-1502085671122-2d218cd434e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=926&q=80);
+    }
+    40% {
+        background-image: url(https://inst.eecs.berkeley.edu/~cs194-26/fa18/upload/files/projFinalAssigned/cs194-26-abr/images/seamcarving/tower.jpg);
+    }
+    50% {
+        background-image: url(https://media.istockphoto.com/photos/couple-pushing-trolley-with-their-child-at-airport-picture-id1325212877?b=1&k=20&m=1325212877&s=170667a&w=0&h=lEey74nmiKVFn2Nc0vVUNUhKysbTbiJnyMn3uv013uM=);
+    }
+    60% {
+        background-image: url(https://images.unsplash.com/photo-1533587851505-d119e13fa0d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60);
+    }
+    70% {
+        background-image: url(https://images.unsplash.com/photo-1524467128837-00f6644866d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTN8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+    }
+    80% {
+        background-image: url(https://images.unsplash.com/photo-1609137144813-7d9921338f24?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8OHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60);
+    }
+    90% {
+        background-image: url(https://images.unsplash.com/photo-1576487248805-cf45f6bcc67f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTh8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+    }
+}
+.ani{
+    height: 500px;
+    width: 1000px;
+    margin-left: 150px;
+    border: 1px solid  #ffffff87;
+ 
+}

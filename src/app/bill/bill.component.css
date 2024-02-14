@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.nav-link{
+
+  cursor: pointer;
+}
+
+.navbar-expand-lg .navbar-collapse{
+  justify-content: end;
+}
+
+/* .sticky-top{
+  box-shadow: 0 3px 6px #017143;
+} */
+
+/* .navbar-light .navbar-nav .nav-link{
+  color: #017143;
+  font-size: 20px;
+  font-family: 'Poppins';
+  font-weight: bolder;
+} */
+
+/* .navbar-light .navbar-nav .nav-link i:hover{
+  color: #01b39b;
+} */
+
+/* i{
+  color: #017143;
+  cursor: pointer;
+} */
+
+/* .navbar-brand {
+  color: #017143;
+  font-size: 35px;
+  font-family: 'Pacifico';
+} */
+
+/* .navbar-brand:hover{
+  color: #017143;
+} */
+
+/* .dropdown-menu, .dropdown-item{
+  color: #017143;
+  font-family: 'Roboto';
+  text-align: center;
+} */
+
+/* .dropdown-menu, .dropdown-item:hover{
+  color: #01b39b;
+  cursor: pointer;
+} */
+
+.list-item{
+  list-style: none;
+  font-family: 'Poppins';
+}

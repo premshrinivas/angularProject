@@ -1,0 +1,71 @@
+<div class="bg-img">
+    <div>{{myForm.value |json}}</div>
+    <form class="form-card" class="form-card" [formGroup]="form" (ngSubmit)="onSav()">
+        <div class="m-4">
+            <div class="row gx-3 gy-2 align-items-center">
+
+                <div class="col-sm-4" *ngFor="let dats of formData">
+                    <div *ngIf="dats.type === 'text'">
+
+                        <div *ngIf="dats.need === true">
+                            <label class="visually" for="specificSizeInputName">{{ dats.disPlayName}}*</label>
+                            <input class="form-control" type="text" [formControlName]="dats.fields"
+                                [placeholder]="dats.placeHolder" [class.is-invalid]="submitted === true">
+                            <div *ngIf="submitted === true" class="invalid-feedback">
+                                <div>{{dats.disPlayName}} is required</div>
+                            </div>
+
+                        </div>
+                        <div *ngIf="dats.need === null">
+                            <label class="visually" for="specificSizeInputName">{{ dats.disPlayName}}</label>
+                            <input class="form-control" type="text" [formControlName]="dats.fields"
+                                [placeholder]="dats.placeHolder">
+                        </div>
+                    </div>
+                    <div *ngIf="dats.type === 'radio'">
+                        <label class="visually" for="specificSizeInputName">{{ dats.disPlayName}}</label>
+                        <input class="form-control" type="radio" [formControlName]="dats.fields"
+                            [placeholder]="dats.placeHolder">
+                    </div>
+
+                    <div *ngIf="dats.type === 'checkbox'">
+                        <label class="visually" for="specificSizeInputName">{{ dats.disPlayName}}</label>
+                        <input class="form-control" type="checkbox" [formControlName]="dats.fields"
+                            [placeholder]="dats.placeHolder">
+                    </div>
+                    <div *ngIf="dats.type === 'date'">
+                        <label class="visually" for="specificSizeInputName">{{ dats.disPlayName}}</label>
+                        <input class="form-control" type="date" [formControlName]="dats.fields"
+                            [placeholder]="dats.placeHolder">
+                    </div>
+                    <div *ngIf="dats.type === 'select'">
+                        <label class="visually" for="specificSizeInputName">{{ dats.disPlayName}}</label>
+                        <select class="form-control" type="select" [formControlName]="dats.fields">
+                            <option val="-1"> select </option>
+                            <option *ngFor="let val of dats.placeHolder.split(',')" value="{{val}}"> {{val}} </option>
+
+                        </select>
+                    </div>
+
+                    <div *ngIf="dats.type === 'textarea'">
+                        <label class="visually" for="specificSizeInputName">{{ dats.disPlayName}}</label>
+                        <textarea class="form-control" type="textarea" [formControlName]="dats.fields"
+                            [placeholder]="dats.placeHolder"></textarea>
+                    </div>
+
+
+                </div>
+
+                <div class="row" style="padding-top: 10px;">
+                    <div class="col-lg-12 text-center">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="button" class="btn btn-dark" style="margin-left: 5px;"
+                            routerLink="/grid">Back</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </form>
+</div>

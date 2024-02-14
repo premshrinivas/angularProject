@@ -1,0 +1,60 @@
+
+  
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/home">
+        <img src="https://www.holidify.com/res/images/icons/holidify-logo.svg"
+          alt="" width="80" height="50" class="d-inline-block">
+        
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav px-2">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/carousel3">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Bookings
+          </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="/register" *ngIf="(this.role =='User') || (this.role =='Admin') || (this.role =='Superadmin')">New Booking</a></li>
+              <li><a class="dropdown-item" href="/grid" *ngIf="(this.role =='User') || (this.role =='Admin') || (this.role =='Superadmin')">Modify Booking</a></li>
+             
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/usergrid"*ngIf="(this.role =='Admin') || (this.role =='Superadmin')">Userdata</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/dynamic" (click)="myMethod()" *ngIf="(this.role =='Admin') || (this.role =='Superadmin')">DynamicUi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/clp"*ngIf="(this.role =='Admin') || (this.role =='Superadmin')">clp</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/boot"*ngIf="(this.role =='Admin') || (this.role =='Superadmin')">BootVa</a>
+          </li>
+          <li class="nav-item dropdown">
+            <img [src]="this.userImage" class="nav-link dropdown-toggle" height="50px" width="80px" id="navbarDropdownMenuLink" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false" style="padding-top: 1px;">
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item"(click)="onedit()">Edit Profile</a></li>
+              <hr>
+              <li><button class="btn btn default" (click)="onlogout()"><i class="fa fa-sign-out"></i></button> </li>
+            
+            </ul>
+          </li> &nbsp; 
+          <ul class="list-group">
+            <li class="list-item fw-bold"><span style="color: #925608">{{this.name}}</span></li>
+            <li class="list-item fw-bold" style="color: #7b4d04">{{this.role}}</li>
+          </ul>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
